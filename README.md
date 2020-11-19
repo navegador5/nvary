@@ -6,25 +6,25 @@ nv-array
 
 install
 =======
-- npm install nv-array-init
-- npm install nv-array-basic
-- npm install nv-array-findiv
-- npm install nv-array-find-index
-- npm install nv-array-find-value
-- npm install nv-array-index-of
-- npm install nv-array-proposition
-- npm install nv-array-pop-with-function
-- npm install nv-array-pop-with-index
-- npm install nv-array-pop-with-value
-- npm install nv-array-remove-with-function
-- npm install nv-array-remove-with-index
-- npm install nv-array-remove-with-value
-- npm install nv-array-map
-- npm install nv-array-sort
-- npm install nv-array-slice-with-function
-- npm install nv-array-slice-with-value
-- npm install nv-array-swap
-- npm install nv-array-replace-with-index
+- [npm install nv-array-init](https://www.npmjs.com/package/nv-array-init)
+- [npm install nv-array-basic](https://www.npmjs.com/package/nv-array-basic)
+- [npm install nv-array-findiv](https://www.npmjs.com/package/nv-array-findiv)
+- [npm install nv-array-find-index](https://www.npmjs.com/package/nv-array-find-index)
+- [npm install nv-array-find-value](https://www.npmjs.com/package/nv-array-find-value)
+- [npm install nv-array-index-of](https://www.npmjs.com/package/nv-array-index-of)
+- [npm install nv-array-proposition](https://www.npmjs.com/package/nv-array-proposition)
+- [npm install nv-array-pop-with-function](https://www.npmjs.com/package/nv-array-pop-with-function)
+- [npm install nv-array-pop-with-index](https://www.npmjs.com/package/nv-array-pop-with-index)
+- [npm install nv-array-pop-with-value](https://www.npmjs.com/package/nv-array-pop-with-value)
+- [npm install nv-array-remove-with-function](https://www.npmjs.com/package/nv-array-remove-with-function)
+- [npm install nv-array-remove-with-index](https://www.npmjs.com/package/nv-array-remove-with-index)
+- [npm install nv-array-remove-with-value](https://www.npmjs.com/package/nv-array-remove-with-value)
+- [npm install nv-array-map](https://www.npmjs.com/package/nv-array-map)
+- [npm install nv-array-sort](https://www.npmjs.com/package/nv-array-sort)
+- [npm install nv-array-slice-with-function](https://www.npmjs.com/package/nv-array-slice-with-function)
+- [npm install nv-array-slice-with-value](https://www.npmjs.com/package/nv-array-slice-with-value)
+- [npm install nv-array-swap](https://www.npmjs.com/package/nv-array-swap)
+- [npm install nv-array-replace-with-index](https://www.npmjs.com/package/nv-array-replace-with-index)
 
 usage
 =====
