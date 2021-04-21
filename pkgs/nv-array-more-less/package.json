@@ -1,0 +1,11 @@
+{
+  "name": "nv-array-more-less",
+  "version": "1.0.0",
+  "description": "nv-array-more-less ============ - nv-array-more-less",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

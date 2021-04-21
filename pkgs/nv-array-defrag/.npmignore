@@ -1,0 +1,10 @@
+
+BAK/
+DRAFT/
+RESOURCE/
+TEST/
+TOOL/
+TODO/
+dist/
+node_modules/
+package-lock.json

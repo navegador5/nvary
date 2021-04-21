@@ -1,0 +1,19 @@
+{
+  "name": "nv-array-callable",
+  "version": "1.0.0",
+  "description": "callable array",
+  "main": "index.js",
+  "dependencies": {
+    "nv-facutil-defp": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "array-like",
+    "cllable"
+  ],
+  "author": "",
+  "license": "ISC"
+}

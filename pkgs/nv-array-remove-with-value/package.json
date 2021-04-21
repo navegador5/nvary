@@ -1,0 +1,14 @@
+{
+  "name": "nv-array-remove-with-value",
+  "version": "1.0.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nv-array-remove-with-function": "^1.0.2"
+  }
+}

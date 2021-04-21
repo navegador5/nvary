@@ -1,0 +1,11 @@
+{
+  "name": "nv-array-group",
+  "version": "1.0.0",
+  "description": "nv-array-group ============ - nv-array-group",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

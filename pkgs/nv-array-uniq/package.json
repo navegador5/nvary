@@ -1,0 +1,14 @@
+{
+  "name": "nv-array-uniq",
+  "version": "1.0.1",
+  "description": "nv-array-uniq ============ - nv-array-uniq",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nv-array-basic": "^1.0.11"
+  }
+}

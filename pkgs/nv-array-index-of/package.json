@@ -1,0 +1,12 @@
+{
+  "name": "nv-array-index-of",
+  "version": "1.0.3",
+  "description": "nv-array-index-of =============== - nv-array-index-of",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}

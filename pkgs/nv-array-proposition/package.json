@@ -1,0 +1,14 @@
+{
+  "name": "nv-array-proposition",
+  "version": "1.0.0",
+  "description": "nv-array-proposition ===================== - nv-array-proposition",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nv-array-basic": "^1.0.2"
+  }
+}

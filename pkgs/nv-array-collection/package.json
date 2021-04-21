@@ -1,0 +1,11 @@
+{
+  "name": "nv-array-collection",
+  "version": "1.0.0",
+  "description": "nv-array-collection =================== - nv-array-collection",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "nv-array-divide",
+  "version": "1.0.0",
+  "description": "nv-array-divide ============ - nv-array-divide",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nv-array-span": "^1.0.0"
+  }
+}

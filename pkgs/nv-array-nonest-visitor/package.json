@@ -1,0 +1,21 @@
+{
+  "name": "nv-array-nonest-visitor",
+  "version": "1.0.1",
+  "description": "nv-array-nonest-visitor ============ - nv-array-nonest-visitor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [
+    "array",
+    "nonest",
+    "visitor",
+    "remove",
+    "replace",
+    "insert_before",
+    "insert_after",
+    "skip"
+  ]
+}

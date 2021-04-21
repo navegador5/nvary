@@ -1,0 +1,15 @@
+{
+  "name": "nv-array-slice-with-value",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nv-array-init": "^1.0.0",
+    "nv-array-slice-with-function": "^1.0.0"
+  }
+}

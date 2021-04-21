@@ -1,0 +1,15 @@
+{
+  "name": "nv-array-setter",
+  "version": "1.0.0",
+  "description": "nv-array-setter ============ - nv-array-setter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "array",
+    "setter"
+  ],
+  "author": "",
+  "license": "ISC"
+}
