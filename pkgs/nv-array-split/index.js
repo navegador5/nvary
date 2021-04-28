@@ -1,3 +1,4 @@
+const _ = Object.getOwnPropertyDescriptors;
 
 function _test(o,r,i) {
     if(o instanceof String || o instanceof Array) {
@@ -6,7 +7,13 @@ function _test(o,r,i) {
         return(o.has(r))
     } else if(o instanceof RegExp) {
         return(o.test(r))
-    } else if(o instanceof Function && Object.getOwnPropertyDescriptors(o).prototype===undefined ) {
+    } else if(
+        o instanceof Function && 
+        (
+            _(o).prototype===undefined ||
+            (_(o).includes("arguments"))
+        )
+    ) {
         return(o(r,i))
     } else {
         return(o===r)
