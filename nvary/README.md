@@ -56,7 +56,7 @@ splitted
 - [npm install nv-array-include](https://www.npmjs.com/package/nv-array-include)
 - [npm install nv-array-mole](https://www.npmjs.com/package/nv-array-mole)
 - [npm install nv-array-defrag](https://www.npmjs.com/package/nv-array-defrag)
-
+- [npm install nv-array-split](https://www.npmjs.com/package/nv-array-split)
 
 
 usage
@@ -103,6 +103,7 @@ usage
     const ary_clu = require("nv-array-include")
     const ary_mole = require("nv-array-more-less")
     const ary_defrag = require("nv-array-defrag")
+    const ary_sp = require("nv-array-split")
 
 API
 ====
@@ -512,6 +513,13 @@ API
 
 - ary\_defrag.defrag(arr,empty=undefined)
 - ary\_defrag.defrag\_with\_st(arr,empty\_set,empty=undefined)
+
+
+- ary\_sp.all(arr,sps)
+- ary\_sp.cond(arr,sps)
+- ary\_sp.slc(arr,sps)
+- ary\_sp.rng(arr,sps)
+- ary\_sp.join(arr,sps,delimeter='')
 
 
 LICENSE

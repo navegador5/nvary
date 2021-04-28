@@ -42,11 +42,22 @@ example
     [ 1, 11, 12, 13, undefined, undefined, undefined ]
     >
 
+    var arr = [1,0,11,12,null,undefined,13]
+    ary_defrag.defrag_with_st(arr,new Set([0,null,undefined]),undefined,1,4)
+
+    > ary_defrag.defrag_with_st(arr,new Set([0,null,undefined]),undefined,1,4)
+    Map(2) { 2 => 1, 3 => 2 }
+    >
+    > arr
+    [ 1, 11, 12, undefined, null, undefined, 13 ]
+    >
+
+
 API
 ====
 
-- ary\_defrag.defrag(arr,empty=undefined)
-- ary\_defrag.defrag\_with\_st(arr,empty\_set,empty=undefined)        
+- ary\_defrag.defrag(arr,empty=undefined,from,to)
+- ary\_defrag.defrag\_with\_st(arr,empty\_set,empty=undefined,from,to)        
 
 
 LICENSE

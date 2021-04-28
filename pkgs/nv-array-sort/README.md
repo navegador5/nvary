@@ -69,6 +69,15 @@ example
     //6  upper-bound-value
 
 
+    > var ref=[1,2,3,4,5,6]
+    undefined
+    > match_partial_order(ref,[2,5,6],r=>r)
+    true
+    > match_partial_order(ref,[5,2,6],r=>r)
+    false
+    >
+
+
 API
 ====
 
@@ -83,7 +92,7 @@ API
 - ary\_sort.lbi(sorted\_arr,v)
 - ary\_sort.ubv(sorted\_arr,v)
 - ary\_sort.ubi(sorted\_arr,v)
-
+- ary\_sort.match\_partial\_order(ref,ary,f=(r,i)=>r)
 
 LICENSE
 =======
