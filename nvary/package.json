@@ -1,6 +1,6 @@
 {
   "name": "nvary",
-  "version": "1.1.8",
+  "version": "1.1.10",
   "description": "nv-array ============ - simple array tools - only install which you needed",
   "main": "index.js",
   "scripts": {
@@ -40,6 +40,7 @@
     "nv-array-listenable": "^1.0.3",
     "nv-array-location": "^1.0.0",
     "nv-array-map": "^1.0.0",
+    "nv-array-match": "^1.0.0",
     "nv-array-more-less": "^1.0.0",
     "nv-array-nonest-visitor": "^1.0.1",
     "nv-array-pop-with-function": "^1.0.4",
@@ -59,7 +60,7 @@
     "nv-array-slide": "^1.0.1",
     "nv-array-sort": "^1.0.4",
     "nv-array-span": "^1.0.0",
-    "nv-array-split": "^1.0.0",
+    "nv-array-split": "^1.0.1",
     "nv-array-swap": "^1.0.0",
     "nv-array-transform": "^1.0.0",
     "nv-array-trim-with-function": "^1.0.0",

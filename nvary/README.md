@@ -57,6 +57,7 @@ splitted
 - [npm install nv-array-mole](https://www.npmjs.com/package/nv-array-mole)
 - [npm install nv-array-defrag](https://www.npmjs.com/package/nv-array-defrag)
 - [npm install nv-array-split](https://www.npmjs.com/package/nv-array-split)
+- [npm install nv-array-match](https://www.npmjs.com/package/nv-array-match)
 
 
 usage
@@ -104,6 +105,7 @@ usage
     const ary_mole = require("nv-array-more-less")
     const ary_defrag = require("nv-array-defrag")
     const ary_sp = require("nv-array-split")
+    const ary_mch = require("nv-array-match")
 
 API
 ====
@@ -520,6 +522,13 @@ API
 - ary\_sp.slc(arr,sps)
 - ary\_sp.rng(arr,sps)
 - ary\_sp.join(arr,sps,delimeter='')
+
+- ary\_mch.po\_all\_pos(data:Array<any>,matches:Array<SP>):Array<Array<number>>
+- ary\_mch.po\_all\_match(data:Array<any>,matches:Array<SP>):Array<Array<any>>
+- ary\_mch.po\_gen\_pos(data:Array<any>,matches:Array<SP>):Generator
+- ary\_mch.po\_gen\_match(data:Array<any>,matches:Array<SP>):Generator
+- ary\_mch.po\_is\_match(data:Array<any>,matches:Array<SP>):Boolean
+
 
 
 LICENSE
