@@ -57,6 +57,18 @@ function lgrpv(arr) {
     return(fgrp_engine((r,i)=>r,arr,LNGTH_FUNC))
 }
 
+function freq_grp(arr) {
+    let  mp = new Map()
+    for(let each of arr) {
+        let tmp =  mp.get(each)
+        if(tmp) {
+            tmp[0] = tmp[0] +1;
+        } else {
+            mp.set(each,[1])
+        }
+    }
+    return(mp)
+}
 
 module.exports = {
     fgrpvi,
@@ -67,5 +79,6 @@ module.exports = {
     vgrpv,
     lgrpvi,
     lgrpi,
-    lgrpv    
+    lgrpv,
+    freq_grp,
 }

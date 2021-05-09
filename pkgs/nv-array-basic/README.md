@@ -98,6 +98,8 @@ example
     ]
     >
 
+    ary_bsc.freq([3,1,3,3,2,3,1],3)
+    >4
 
     > arr
     [ undefined, <1 empty item>, 500, <2 empty items> ]
@@ -136,13 +138,18 @@ API
 - ary\_bsc.tail(arr)
 - ary\_bsc.mid(arr)
 - ary\_bsc.init(arr)
+- ary\_bsc.lsti(arr)
 - ary\_bsc.lst(arr)
+- ary\_bsc.slst(arr,v)
+- ary\_bsc.ibfr(arr,index,v)                    //insert\_before
+- ary\_bsc.iaft(arr,index,v)                    //insert\_after
+- ary\_bsc.rm(arr,index)                        //remove element at index
 - ary\_bsc.some(arr,...whiches)
 - ary\_bsc.some\_not(arr,...whiches)
 - ary\_bsc.clear(arr)
 - ary\_bsc.validate\_index(arr,index)
 - ary\_bsc.validate\_value(arr,value)
-- ary\_bsc.validate\_vi(arr,d)  //d = {i:index,v:value}
+- ary\_bsc.validate\_vi(arr,d)                //d = {i:index,v:value}
 - ary\_bsc.odd(arr)
 - ary\_bsc.even(arr)
 - ary\_bsc.interval(arr,interval)

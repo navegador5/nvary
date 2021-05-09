@@ -1,6 +1,6 @@
 {
   "name": "nvary",
-  "version": "1.1.10",
+  "version": "1.1.12",
   "description": "nv-array ============ - simple array tools - only install which you needed",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/navegador5/nvary#readme",
   "dependencies": {
-    "nv-array-basic": "^1.0.15",
+    "nv-array-basic": "^1.0.17",
     "nv-array-callable": "^1.0.0",
     "nv-array-collection": "^1.0.0",
     "nv-array-combo": "^1.0.0",
@@ -66,5 +66,10 @@
     "nv-array-trim-with-function": "^1.0.0",
     "nv-array-trim-with-value": "^1.0.0",
     "nv-array-uniq": "^1.0.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.0.0"
   }
 }
