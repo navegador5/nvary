@@ -77,6 +77,62 @@ example
     false
     >
 
+cmp
+---
+
+    const {DFLT_CMP_FUNC,cmp} = require("nv-array-sort")
+
+
+
+    > var ary0= [0,0,1]
+    undefined
+    > var ary1= [0,1,1]
+    undefined
+    > cmp(ary0,ary1)
+    -1
+
+
+
+    > var ary0= [0,0]
+    undefined
+    > var ary1= [0,0,0]
+    undefined
+    > cmp(ary0,ary1)
+    -1
+    >
+
+    > cmp(ary0,ary1,DFLT_CMP_FUNC,0)
+    0
+    > cmp(ary0,ary1,DFLT_CMP_FUNC,1)
+    1
+    > DFLT_CMP_FUNC.toString()
+    '(r,e)=>e<r?1:r<e?-1:0'
+    >
+
+    [
+       [0,0],
+       [0],
+       [1],
+       [0,0,0],
+       [0,0,1],
+       [0,0,1,0],
+       [1,0],
+       [1,3],
+       [1,2],
+       [1,1],
+       []
+    ].sort(cmp)
+
+    [
+      [],          [ 0 ],
+      [ 0, 0 ],    [ 0, 0, 0 ],
+      [ 0, 0, 1 ], [ 0, 0, 1, 0 ],
+      [ 1 ],       [ 1, 0 ],
+      [ 1, 1 ],    [ 1, 2 ],
+      [ 1, 3 ]
+    ]
+    >
+
 
 API
 ====
@@ -93,6 +149,8 @@ API
 - ary\_sort.ubv(sorted\_arr,v)
 - ary\_sort.ubi(sorted\_arr,v)
 - ary\_sort.match\_partial\_order(ref,ary,f=(r,i)=>r)
+- DFLT\_CMP\_FUNC
+- ary\_cmp(ary0,ary1,cmp\_func=DFLT\_CMP\_FUNC,rtrn\_if\_empty=-1)
 
 LICENSE
 =======

@@ -148,7 +148,43 @@ function match_partial_order(ref,ary,f=(r,i)=>r) {
     return(true)
 }
 
+
+function _cmp(ary0,ary1,cmp_func) {
+    for(let i=0;i<ary0.length;i++) {
+        let rslt = cmp_func(ary0[i],ary1[i])
+        if(rslt ===0) {
+        } else {
+            return(rslt)
+        }
+    }
+    return(0)
+}
+
+function cmp(ary0,ary1,cmp_func=DFLT_CMP_FUNC,rtrn_if_empty=-1) {
+    let lngth0=ary0.length;
+    let lngth1=ary1.length;
+    if(lngth0<lngth1) {
+        let rslt = _cmp(ary0,ary1.slice(0,lngth0),cmp_func);
+        if(rslt ===0) {
+            return(rtrn_if_empty)
+        } else {
+            return(rslt)
+        }
+    } else if(lngth0===lngth1) {
+        return(_cmp(ary0,ary1,cmp_func))
+    } else {
+        let rslt = _cmp(ary0,ary1.slice(0,lngth1),cmp_func);
+        if(rslt ===0) {
+            return(-rtrn_if_empty)
+        } else {
+            return(rslt)
+        }
+    }
+}
+
+
 module.exports = {
+    DFLT_CMP_FUNC,
     num,
     slice,
     ref,
@@ -164,4 +200,5 @@ module.exports = {
     bsrch_fsti,
     merge_sorted,
     match_partial_order,
+    cmp,
 }

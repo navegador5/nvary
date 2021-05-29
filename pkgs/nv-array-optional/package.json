@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "nv-array-basic": "^1.0.18",
+    "nv-array-combo": "^1.0.0"
+  },
+  "name": "nv-array-optional",
+  "description": "nv-array-optional ============ - nv-array-optional",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

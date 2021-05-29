@@ -43,6 +43,7 @@
     "nv-array-match": "^1.0.0",
     "nv-array-more-less": "^1.0.0",
     "nv-array-nonest-visitor": "^1.0.1",
+    "nv-array-optional": "^1.0.0",
     "nv-array-pop-with-function": "^1.0.4",
     "nv-array-pop-with-index": "^1.0.0",
     "nv-array-pop-with-value": "^1.0.2",
