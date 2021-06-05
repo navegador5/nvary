@@ -1,6 +1,6 @@
 {
   "name": "nvary",
-  "version": "1.1.12",
+  "version": "1.1.15",
   "description": "nv-array ============ - simple array tools - only install which you needed",
   "main": "index.js",
   "scripts": {
@@ -39,6 +39,7 @@
     "nv-array-init": "^1.0.1",
     "nv-array-listenable": "^1.0.3",
     "nv-array-location": "^1.0.0",
+    "nv-array-lrq": "^1.0.1",
     "nv-array-map": "^1.0.0",
     "nv-array-match": "^1.0.0",
     "nv-array-more-less": "^1.0.0",

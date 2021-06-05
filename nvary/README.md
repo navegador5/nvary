@@ -59,7 +59,7 @@ splitted
 - [npm install nv-array-split](https://www.npmjs.com/package/nv-array-split)
 - [npm install nv-array-match](https://www.npmjs.com/package/nv-array-match)
 - [npm install nv-array-optional](https://www.npmjs.com/package/nv-array-optional)
-
+- [npm install nv-array-lrq](https://www.npmjs.com/package/nv-array-lrq)
 
 usage
 =====
@@ -108,7 +108,7 @@ usage
     const ary_sp = require("nv-array-split")
     const ary_mch = require("nv-array-match")
     const ary_opt = require("nv-array-optional")
-
+    const ary_lrq = require("nv-array-lrq")
 
 API
 ====
@@ -538,6 +538,8 @@ API
 - ary\_opt.gen\_unordered(ary,opt\_idxs,with\_placeholder=false,placeholder=null)
 - ary\_opt.unordered(ary,opt\_idxs,with\_placeholder=false,placeholder=null)
 
+
+- ary\_lrq.parse(ary,cfg)
 
 LICENSE
 =======
