@@ -60,6 +60,8 @@ splitted
 - [npm install nv-array-match](https://www.npmjs.com/package/nv-array-match)
 - [npm install nv-array-optional](https://www.npmjs.com/package/nv-array-optional)
 - [npm install nv-array-lrq](https://www.npmjs.com/package/nv-array-lrq)
+- [npm install nv-array-oper](https://www.npmjs.com/package/nv-array-oper)
+
 
 usage
 =====
@@ -109,6 +111,7 @@ usage
     const ary_mch = require("nv-array-match")
     const ary_opt = require("nv-array-optional")
     const ary_lrq = require("nv-array-lrq")
+    const ary_op = require("nv-array-oper") 
 
 API
 ====

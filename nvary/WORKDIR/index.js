@@ -44,6 +44,8 @@ const ary_sp = require("nv-array-split")
 const ary_defrag = require("nv-array-defrag")
 const ary_mch = require("nv-array-match")
 const ary_lrq = require("nv-array-lrq")
+const ary_op  = require("nv-array-oper")
+
 
 module.exports = {
     ary_init,
@@ -91,5 +93,6 @@ module.exports = {
     ary_defrag,
     ary_mch,
     ary_lrq,
+    ary_op,
     RArray,
 }
