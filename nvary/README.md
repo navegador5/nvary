@@ -61,6 +61,9 @@ splitted
 - [npm install nv-array-optional](https://www.npmjs.com/package/nv-array-optional)
 - [npm install nv-array-lrq](https://www.npmjs.com/package/nv-array-lrq)
 - [npm install nv-array-oper](https://www.npmjs.com/package/nv-array-oper)
+- [npm install nv-array-range](https://www.npmjs.com/package/nv-array-range)
+- [npm install nv-array-radix](https://www.npmjs.com/package/nv-array-radix)
+
 
 
 usage
@@ -112,6 +115,8 @@ usage
     const ary_opt = require("nv-array-optional")
     const ary_lrq = require("nv-array-lrq")
     const ary_op = require("nv-array-oper") 
+    const ary_rng = require("nv-array-range")
+    const ary_rdx = require("nv-array-radix")
 
 API
 ====

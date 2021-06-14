@@ -1,0 +1,11 @@
+{
+  "name": "nv-array-oper",
+  "version": "1.0.0",
+  "description": "nv-array-oper ============= - nv-array-oper  - to avoid use operator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

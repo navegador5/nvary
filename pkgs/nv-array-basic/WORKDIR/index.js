@@ -1,3 +1,5 @@
+const {hole,noexist,is_int,GLOBAL_ERROR_DICT} = require("nv-facutil-basic");
+
 const lsti = (arr)=>arr.length-1;
 
 
@@ -158,9 +160,9 @@ function to_wmap(arr) {
 }
 
 function is_hole_element_at(arr,index) {
-    let c = empty;
+    let c = hole;
     arr.forEach((r,i)=>{if(i===index){c=i}})
-    return(c==empty)
+    return(c==hole)
 }
 
 
@@ -193,6 +195,127 @@ function freq(arr,ele) {
         (each===ele)?(c=c+1):0
     }
     return(c)
+}
+
+
+function _is_index(idx,key) {
+    return(idx.toString()===key && idx>=0 && idx<2**32 -1)
+}
+
+function is_index(key) {
+    let idx = parseInt(key);
+    return(_is_index(idx,key))
+}
+
+function _get_with_index(target,key,idx) {
+    let [si,ei] = [0,target.length];
+    if(idx>=si && idx <ei) {
+        if(is_hole_element_at(target,idx)) {
+            return(hole)
+        } else {
+            let real_v = Reflect.get(target,key);
+            return(real_v)
+        }
+    } else {
+        return(noexist)
+    }
+}
+
+function _safe_get(target,key) {
+     let idx = parseInt(key);
+     if(_is_index(idx,key)) {
+         return(_get_with_index(target,key,idx))
+     } else {
+         return(Reflect.get(target,key))
+     }
+}
+
+function safe_get(ary,key) {
+    if(typeof(key)==='string') {
+        return(_safe_get(ary,key))
+    } else if(is_int(key)){
+        return(_get_with_index(ary,key,key))  
+    } else {
+        return(Reflect.get(ary,key))
+    }
+}
+
+
+function creat_safe_getter_proxy(ary) {
+     let proxy = new Proxy(
+         ary,
+         {
+             get:function(target,key,receiver) {
+                 return(_safe_get(target,key))
+             }
+         }
+     );
+     return(proxy)
+}
+
+const ERROR_DICT = {
+    index_not_in_range:new Error("index_not_in_range")
+}
+
+function _set_with_index(target,key,idx,value) {
+     let [si,ei] = [0,target.length];
+     if(idx>=si && idx <ei) {
+         if(value === noexist) {
+             throw(GLOBAL_ERROR_DICT.noexist_is_not_assignable)
+         } else {
+             return(Reflect.set(target,key,value))
+         }
+     } else {
+         throw(ERROR_DICT.index_not_in_range)
+     }
+}
+
+function _safe_set(target,key,value) {
+     let idx = parseInt(key);
+     if(_is_index(idx,key)) {
+         _set_with_index(target,key,idx,value);
+     } else {
+         Reflect.set(target,key,value)
+     }
+}
+
+function safe_set(ary,key,value) {
+    if(typeof(key)==='string') {
+        _safe_set(ary,key,value);
+    } else if(is_int(key)){
+        _set_with_index(ary,key,key,value);
+    } else {
+        Reflect.set(ary,key,value);
+    }
+}
+
+
+function creat_safe_setter_proxy(ary) {
+     let proxy = new Proxy(
+         ary,
+         {
+             set:function(target,key,value,receiver) {
+                 _safe_set(target,key,value)
+             }
+         }
+     );
+     return(proxy)
+}
+
+
+function creat_safe_gsetter_proxy(ary) {
+     let proxy = new Proxy(
+         ary,
+         {
+             get:function(target,key,receiver) {
+                 return(_safe_get(target,key))
+             },
+             set:function(target,key,value,receiver) {
+                 _safe_set(target,key,value)
+             }
+         }
+     );
+     return(proxy)
 }
 
 
@@ -241,7 +364,16 @@ module.exports = {
     get_nonhole_indexes,
     get_hole_indexes,
     has_hole,
-    fill_hole
+    fill_hole,
+    is_index,
+    ERROR_DICT,
+    safe_get,
+    creat_safe_getter_proxy,
+    safe_set,
+    creat_safe_setter_proxy,
+    creat_safe_gsetter_proxy,
+    hole,
+    noexist,
 }
 
 

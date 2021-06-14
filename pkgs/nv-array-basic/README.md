@@ -132,6 +132,72 @@ example
     >
 
 
+### safe get set
+
+    > var arr = [10,11,12]
+    > arr[5] = 15
+    15
+    > arr[3] = undefined
+    undefined
+    > arr
+    [ 10, 11, 12, undefined, <1 empty item>, 15 ]
+    >
+
+    arr[3] === arr[4]   ////??? !!!!
+    true
+
+    > arr[6]
+    undefined
+    > arr.hasOwnProperty(6)
+    false
+    >
+    > ary_bsc.is_hole_element_at(arr,4)
+    true
+    >
+
+    > ary_bsc.safe_get(arr,6)
+    Symbol(noexist)
+    > ary_bsc.safe_get(arr,4)
+    Symbol(hole)
+    >
+
+
+
+    > var ap = ary_bsc.creat_safe_getter_proxy(arr)
+    > ap
+    Proxy [
+      [ 10, 11, 12, undefined, <1 empty item>, 15 ],
+      { get: [Function: get] }
+    ]
+    >
+    > ap[0]
+    10
+    > ap[3]
+    undefined
+    > ap[4]
+    Symbol(hole)
+    > ap[5]
+    15
+    > ap[6]
+    Symbol(noexist)
+    >
+
+    ary_bsc.safe_set(arr,6,66666)
+    >Uncaught Error: index_not_in_range
+
+    var ap = ary_bsc.creat_safe_setter_proxy(arr)
+
+    > ap
+    Proxy [
+      [ 10, 11, 12, undefined, <1 empty item>, 15 ],
+      { set: [Function: set] }
+    ]
+    > ap[6] = 66666
+    Uncaught Error: index_not_in_range
+
+
+
+
 API
 ====
 - ary\_bsc.head(arr)
@@ -172,6 +238,15 @@ API
 - ary\_bsc.has\_hole(arr)
 - ary\_bsc.fill\_hole(arr,v=undefined) 
 
+- ary\_bsc.safe\_get(ary,index\_or\_key)
+- ary\_bsc.safe\_set(ary,index\_or\_key,value)
+
+- ary\_bsc.creat\_safe\_getter(ary)
+- ary\_bsc.creat\_safe\_setter(ary)
+- ary\_bsc.creat\_safe\_gsetter(ary)
+
+- ary\_bsc.hole
+- ary\_bsc.noexist
 
 LICENSE
 =======

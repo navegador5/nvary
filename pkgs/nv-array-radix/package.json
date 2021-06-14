@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "nv-array-oper": "^1.0.0"
+  },
+  "name": "nv-array-radix",
+  "description": "nv-array-radix ============ - nv-array-radix  - some basic methods for variety-radix support - succ ,prev, lt,eq,gt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
