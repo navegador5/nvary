@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "nv-array-break": "^1.0.2",
+    "nv-array-oper": "^1.0.0",
+    "nv-array-radix": "^1.0.0"
+  },
+  "name": "nv-array-fit",
+  "description": "nv-array-fit ============ - nv-array-fit  - similiar to regexp, but using function to define-pattern",
+  "version": "1.0.2",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "regexp-like",
+    "function-pattern",
+    "match"
+  ],
+  "author": "",
+  "license": "ISC"
+}

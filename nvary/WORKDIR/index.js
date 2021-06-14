@@ -47,6 +47,7 @@ const ary_lrq = require("nv-array-lrq")
 const ary_op  = require("nv-array-oper")
 const ary_rng = require("nv-array-range")
 const ary_rdx = require("nv-array-radix")
+const ary_fit = require("nv-array-fit")
 
 module.exports = {
     ary_init,
@@ -97,5 +98,6 @@ module.exports = {
     ary_op,
     ary_rng,
     ary_rdx,
+    ary_fit,
     RArray,
 }

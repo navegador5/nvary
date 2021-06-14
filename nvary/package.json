@@ -1,6 +1,6 @@
 {
   "name": "nvary",
-  "version": "1.1.21",
+  "version": "1.1.23",
   "description": "nv-array ============ - simple array tools - only install which you needed",
   "main": "index.js",
   "scripts": {
@@ -33,6 +33,7 @@
     "nv-array-find-index": "^1.0.3",
     "nv-array-find-value": "^1.0.2",
     "nv-array-findiv": "^1.0.2",
+    "nv-array-fit": "^1.0.2",
     "nv-array-group": "^1.0.0",
     "nv-array-include": "^1.0.0",
     "nv-array-index-of": "^1.0.3",
