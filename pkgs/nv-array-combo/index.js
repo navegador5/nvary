@@ -21,9 +21,9 @@ function creat_root(arr){
         r=>([
             parseInt(r[0]),
             {
-                origi:parseInt(r[0]),
+                origi:parseInt(r[0]),  //原始位置
                 cachei:null,
-                origv:r[1],
+                origv:r[1],            //原始值
             }
         ])
     )
@@ -138,7 +138,9 @@ function *perm(arr) {
     }
 }
 
-
+/*
+ *
+ */
 
 module.exports = {
     comb,

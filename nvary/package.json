@@ -1,6 +1,6 @@
 {
   "name": "nvary",
-  "version": "1.1.23",
+  "version": "1.1.25",
   "description": "nv-array ============ - simple array tools - only install which you needed",
   "main": "index.js",
   "scripts": {
@@ -21,11 +21,11 @@
   },
   "homepage": "https://github.com/navegador5/nvary#readme",
   "dependencies": {
-    "nv-array-basic": "^1.0.17",
+    "nv-array-basic": "^1.0.21",
     "nv-array-callable": "^1.0.0",
     "nv-array-collection": "^1.0.0",
     "nv-array-combo": "^1.0.0",
-    "nv-array-compare": "^1.0.0",
+    "nv-array-compare": "^1.0.1",
     "nv-array-defrag": "^1.0.2",
     "nv-array-desc": "^1.0.0",
     "nv-array-divide": "^1.0.0",
@@ -38,6 +38,7 @@
     "nv-array-include": "^1.0.0",
     "nv-array-index-of": "^1.0.3",
     "nv-array-init": "^1.0.1",
+    "nv-array-lcs": "^0.0.1",
     "nv-array-listenable": "^1.0.3",
     "nv-array-location": "^1.0.0",
     "nv-array-lrq": "^1.0.1",

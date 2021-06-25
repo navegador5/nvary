@@ -1,0 +1,22 @@
+{
+  "devDependencies": {
+    "nv-facutil-simple-test": "^0.0.1"
+  },
+  "dependencies": {
+    "nv-array-basic": "^1.0.22",
+    "nv-data-linked-list": "^1.0.4",
+    "nv-data-tree-csp-forest": "^1.0.18",
+    "nv-data-tree-csp-node": "^1.0.6",
+    "nv-mat-basic": "^1.0.6",
+    "nv-mat-sparse": "^0.0.2"
+  },
+  "version": "0.0.1",
+  "name": "nv-array-lcs",
+  "description": "nv-array-lcs ============ - nv-array-lcs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

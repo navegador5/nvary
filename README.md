@@ -64,7 +64,7 @@ splitted
 - [npm install nv-array-range](https://www.npmjs.com/package/nv-array-range)
 - [npm install nv-array-radix](https://www.npmjs.com/package/nv-array-radix)
 - [npm install nv-array-fit](https://www.npmjs.com/package/nv-array-fit)
-
+- [npm install nv-array-lcs](https://www.npmjs.com/package/nv-array-lcs)
 
 usage
 =====
@@ -118,6 +118,7 @@ usage
     const ary_rng = require("nv-array-range")
     const ary_rdx = require("nv-array-radix")
     const ary_fit = require("nv-array-fit")
+    const ary_lcs = require("nv-array-lcs") 
 
 API
 ====

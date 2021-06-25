@@ -318,6 +318,25 @@ function creat_safe_gsetter_proxy(ary) {
      return(proxy)
 }
 
+const foldl = (f,acc,ary)=> {
+    for(let each of ary) {
+        acc = f(acc,each)
+    }
+    return(acc)
+}
+
+const foldr = (f,ary,acc) => {
+    let lngth = ary.length -1;
+    for(let i=lngth-1;i>-1;i--) {
+        acc = f(ary[i],acc)
+    }
+    return(acc)
+}
+
+function islct(ary,idxs) {
+    return(ary.filter((r,i)=>idxs.includes(i)))
+}
+
 
 module.exports = {
     eq,
@@ -374,6 +393,11 @@ module.exports = {
     creat_safe_gsetter_proxy,
     hole,
     noexist,
+    ////
+    foldl,
+    foldr,
+    ////
+    islct
 }
 
 
